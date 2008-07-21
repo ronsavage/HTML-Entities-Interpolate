@@ -1,0 +1,19 @@
+--- #YAML:1.0
+name: HTML-Entities-Interpolate
+version: 1.00
+author:
+  - Ron Savage <ron@savage.net.au>
+abstract: |-
+  Call HTML::Entities::encode_entities, via a hash, within a string
+license: artistic
+requires:
+  HTML::Entities: 0
+  Tie::Function: 0
+build_requires:
+  Test::More: 0
+  Test::Pod: 0
+provides:
+  HTML::Entities::Interpolate:
+    file: lib/HTML/Entities/Interpolate.pm
+    version: 1.00
+generated_by: Module::Build version 0.2611

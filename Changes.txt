@@ -1,0 +1,10 @@
+Revision history for Perl extension HTML::Entities::Interpolate.
+
+1.00  Wed Nov  9 15:30:45 2004
+	- Original version
+	- Source code author: David Nicol
+	- I (Ron Savage) am releasing this module, which David emailed to me,
+		because it is a pre-requisite for my module DBIx::Admin
+	- This module was recently released under the name HTML::Entitize, but
+		I've changed this name so it will be found more easily via CPAN searches.
+		The name HTML::Entitize was just a bit too obscure for its own good
