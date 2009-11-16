@@ -1,5 +1,9 @@
 Revision history for Perl extension HTML::Entities::Interpolate.
 
+1.01  Fri Nov 13 13:20:00 2009
+	- Run dos2unix
+	- Rename Changes.txt to CHANGES
+
 1.00  Wed Nov  9 15:30:45 2004
 	- Original version
 	- Source code author: David Nicol
