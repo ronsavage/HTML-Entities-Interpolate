@@ -1,0 +1,21 @@
+---
+abstract: 'Call HTML::Entities::encode_entities, via a hash, within a string'
+author:
+  - 'Ron Savage <ron@savage.net.au>'
+build_requires:
+  Test::More: 0
+  Test::Pod: 0
+configure_requires:
+  Module::Build: 0.36
+dynamic_config: 0
+generated_by: 'Module::Build version 0.3603'
+license: artistic
+name: HTML-Entities-Interpolate
+provides:
+  HTML::Entities::Interpolate:
+    file: lib/HTML/Entities/Interpolate.pm
+    version: 1.00
+requires:
+  HTML::Entities: 0
+  Tie::Function: 0
+version: 1.00
