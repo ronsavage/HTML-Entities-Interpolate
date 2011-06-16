@@ -22,7 +22,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.36"
+            "Module::Build" : "0.38"
          }
       },
       "runtime" : {
@@ -35,7 +35,7 @@
    "provides" : {
       "HTML::Entities::Interpolate" : {
          "file" : "lib/HTML/Entities/Interpolate.pm",
-         "version" : "1.03"
+         "version" : "1.04"
       }
    },
    "release_status" : "stable",
@@ -44,5 +44,5 @@
          "http://opensource.org/licenses/artistic-license.php"
       ]
    },
-   "version" : "1.03"
+   "version" : "1.04"
 }
