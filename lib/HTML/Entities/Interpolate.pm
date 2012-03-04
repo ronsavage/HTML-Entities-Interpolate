@@ -22,7 +22,7 @@ __END__
 
 =head1 NAME
 
-C<HTML::Entities::Interpolate> - Call HTML::Entities::encode_entities, via a hash, within a string
+HTML::Entities::Interpolate - Call HTML::Entities::encode_entities, via a hash, within a string
 
 =head1 Synopsis
 
