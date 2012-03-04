@@ -4,6 +4,7 @@ Module::Build -> new
 (
  module_name	=> 'HTML::Entities::Interpolate',
  license		=> 'artistic',
+ dist_abstract  => 'Call HTML::Entities::encode_entities, via a hash, within a string',
  dist_author	=> 'Ron Savage <ron@savage.net.au>',
  build_requires	=>
  {
