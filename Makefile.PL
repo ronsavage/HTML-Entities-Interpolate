@@ -21,7 +21,7 @@ WriteMakefile
 	},
 	DISTNAME		=> 'HTML-Entities-Interpolate',
 	NAME			=> 'HTML::Entities::Interpolate',
-	LICENSE   => 'perl_5',
+	LICENSE   => 'artistic_2',
 	PL_FILES		=> {},
 	PREREQ_PM		=>
 	{
