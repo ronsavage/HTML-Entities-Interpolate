@@ -26,7 +26,7 @@ WriteMakefile
 	PREREQ_PM		=>
 	{
 		HTML::Entities	=> 0,
-		Test::Simple		=> 0,
+		Test::More		=> 0,
 		Test::Pod		=> 1.45,
 		Tie::Function	=> 0,
 	},
