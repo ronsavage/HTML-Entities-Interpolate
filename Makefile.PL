@@ -27,7 +27,7 @@ WriteMakefile
 	{
 		HTML::Entities	=> 0,
 		Test::More		=> 0,
-		Test::Pod		=> 1.45,
+#		Test::Pod		=> 1.45, # Make it optional. See t/pod.t
 		Tie::Function	=> 0,
 	},
 	VERSION_FROM	=> 'lib/HTML/Entities/Interpolate.pm',
