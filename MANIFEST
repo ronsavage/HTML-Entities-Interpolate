@@ -1,6 +1,6 @@
 Build.PL
 Changelog.ini
-CHANGES
+Changes
 lib/HTML/Entities/Interpolate.pm
 Makefile.PL
 MANIFEST			This list of files

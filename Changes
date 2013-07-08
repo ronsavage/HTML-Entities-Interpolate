@@ -1,5 +1,13 @@
 Revision history for Perl extension HTML::Entities::Interpolate.
 
+1.05  Tue Jul  9 08:56:00 2013
+	- No code changes.
+	- Rename CHANGES to Changes as per CPAN::Changes::SPEC.
+	- Recreate META.* files so they say licence is artistic_2 rather than artistic_1.
+		Build.PL and Makefile.PL already said artistic_2, but the META.* files didn't.
+		There is no reference to licences in the source of the module itself.
+		This was requested by Christopher Meng who packages stuff for Fedora.
+
 1.04  Tue Feb 15 17:02:00 2011
 	- Replace /usr/bin/perl with /usr/bin/env perl.
 	- Replace common::sense with use strict and use warnings, to get uninit var warnings.
