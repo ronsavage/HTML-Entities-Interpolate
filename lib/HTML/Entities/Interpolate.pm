@@ -44,6 +44,22 @@ C<HTML::Entities::Interpolate> is a pure Perl module.
 
 Not needed.
 
+=head1 See Also
+
+L<HTML::Entities>.
+
+=head1 Machine-Readable Change Log
+
+The file Changes was converted into Changelog.ini by L<Module::Metadata::Changes>.
+
+=head1 Repository
+
+L<https://github.com/ronsavage/HTML-Entities-Interpolate>
+
+=head1 Support
+
+L<https://rt.cpan.org/Public/Dist/Display.html?Name=HTML::Entities::Interpolate>.
+
 =head1 Author
 
 David Nicol <davidnicol@gmail.com>.
