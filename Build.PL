@@ -1,23 +1,51 @@
+use strict;
+use warnings;
+
 use Module::Build;
 
-Module::Build -> new
+my $class = Module::Build->subclass(code => <<'EOF');
+
+sub ACTION_authortest
+{
+	my($self) = @_;
+
+	$self->depends_on('build');
+	$self->depends_on('manifest');
+	$self->depends_on('distmeta');
+
+	$self->test_files( qw< t xt/author > );
+	$self->recursive_test_files(1);
+
+	$self->depends_on('test');
+
+	return;
+}
+EOF
+
+$class -> new
 (
- module_name	=> 'HTML::Entities::Interpolate',
- license		=> 'artistic_2',
- dist_abstract  => 'Call HTML::Entities::encode_entities, via a hash, within a string',
- dist_author	=> 'Ron Savage <ron@savage.net.au>',
- build_requires	=>
- {
-	 Test::More=> 0,
-#	 Test::Pod  => 1.45, # Make it optional. See t/pod.t
- },
- configure_requires =>
- {
-	 Module::Build => 0.3800,
- },
- requires	=>
- {
-	 HTML::Entities => 0,
-	 Tie::Function  => 0,
- },
+	module_name	=> 'HTML::Entities::Interpolate',
+	license		=> 'artistic_2',
+	dist_abstract  => 'Call HTML::Entities::encode_entities, via a hash, within a string',
+	dist_author	=> 'Ron Savage <ron@savage.net.au>',
+	build_requires	=>
+	{
+		'Test::More' => 1.001006,
+#		'Test::Pod'  => 1.45, # Make it optional. See t/pod.t
+	},
+	configure_requires =>
+	{
+		'Module::Build' => 0.4210,
+	},
+	requires	=>
+	{
+		'HTML::Entities' => 0,
+		'Tie::Function'  => 0,
+	},
+	resources =>
+	{
+		bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
+		license    => 'http://opensource.org/licenses/Artistic-2.0',
+		repository => 'https://github.com/ronsavage/HTML-Entities-Interpolate',
+	},
 ) -> create_build_script();

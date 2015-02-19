@@ -1,5 +1,11 @@
 Revision history for Perl extension HTML::Entities::Interpolate.
 
+1.06  Wed Feb 18 16:32:00 2015
+	- Add use strict and use warnings to Build.PL and Makefile.PL.
+	- Add github repo to Build.PL, Makefile.PL, and docs.
+	- Move t/pod.t to xt/author/.
+	- Patch Build.PL to handle xt/author/*.t.
+
 1.05  Tue Jul  9 08:56:00 2013
 	- No code changes.
 	- Rename CHANGES to Changes as per CPAN::Changes::SPEC.

@@ -1,34 +1,66 @@
+use strict;
+use warnings;
+
 use ExtUtils::MakeMaker;
 
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 
-WriteMakefile
+my(%params) =
 (
 	($] ge '5.005') ?
 	(
-		'AUTHOR' => 'Ron Savage (ron@savage.net.au)',
+		'AUTHOR'   => 'Ron Savage (ron@savage.net.au)',
 		'ABSTRACT' => 'Call HTML::Entities::encode_entities, via a hash, within a string',
     ) : (),
-	clean			=>
+	clean =>
 	{
-		FILES		=> 'blib/* Makefile MANIFEST HTML-Entities-Interpolate-*'
+		FILES => 'blib/* Makefile MANIFEST HTML-Entities-Interpolate-*'
 	},
-	dist			=>
+	dist =>
 	{
-		COMPRESS	=> 'gzip',
-		SUFFIX		=> 'gz'
+		COMPRESS => 'gzip',
+		SUFFIX   => 'gz'
 	},
-	DISTNAME		=> 'HTML-Entities-Interpolate',
-	NAME			=> 'HTML::Entities::Interpolate',
+	DISTNAME  => 'HTML-Entities-Interpolate',
+	NAME      => 'HTML::Entities::Interpolate',
 	LICENSE   => 'artistic_2',
-	PL_FILES		=> {},
-	PREREQ_PM		=>
+	PL_FILES  => {},
+	PREREQ_PM =>
 	{
-		HTML::Entities	=> 0,
-		Test::More		=> 0,
-#		Test::Pod		=> 1.45, # Make it optional. See t/pod.t
-		Tie::Function	=> 0,
+		'HTML::Entities' => 0,
+		'Test::More'     => 0,
+#		'Test::Pod'      => 1.45, # Make it optional. See t/pod.t
+		'Tie::Function'  => 0,
 	},
-	VERSION_FROM	=> 'lib/HTML/Entities/Interpolate.pm',
+	VERSION_FROM => 'lib/HTML/Entities/Interpolate.pm',
 );
+
+if ( ($ExtUtils::MakeMaker::VERSION =~ /^\d\.\d\d$/) && ($ExtUtils::MakeMaker::VERSION > 6.30) )
+{
+	$params{LICENSE} = 'artistic_2';
+}
+
+if ($ExtUtils::MakeMaker::VERSION ge '6.46')
+{
+	$params{META_MERGE} =
+	{
+		'meta-spec' =>
+		{
+			version => 2,
+		},
+		resources   =>
+		{
+			bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
+			license    => 'http://opensource.org/licenses/Artistic-2.0',
+			repository =>
+			{
+				type => 'git',
+				url  => 'https://github.com/ronsavage/HTML-Entities-Interpolate.git',
+				web  => 'https://github.com/ronsavage/HTML-Entities-Interpolate',
+			},
+		},
+	};
+}
+
+WriteMakefile(%params);
