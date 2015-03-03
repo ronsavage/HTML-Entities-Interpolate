@@ -3,6 +3,8 @@ use warnings;
 
 use ExtUtils::MakeMaker;
 
+# ----------------
+
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 
@@ -12,7 +14,7 @@ my(%params) =
 	(
 		'AUTHOR'   => 'Ron Savage (ron@savage.net.au)',
 		'ABSTRACT' => 'Call HTML::Entities::encode_entities, via a hash, within a string',
-    ) : (),
+		) : (),
 	clean =>
 	{
 		FILES => 'blib/* Makefile MANIFEST HTML-Entities-Interpolate-*'
@@ -29,9 +31,9 @@ my(%params) =
 	PREREQ_PM =>
 	{
 		'HTML::Entities' => 0,
-		'Test::More'     => 0,
-#		'Test::Pod'      => 1.45, # Make it optional. See t/pod.t
-		'Tie::Function'  => 0,
+		'Test::More' => 1.001014,
+		'Test::Pod' => 1.48,
+		'Tie::Function' => 0,
 	},
 	VERSION_FROM => 'lib/HTML/Entities/Interpolate.pm',
 );
@@ -47,17 +49,17 @@ if ($ExtUtils::MakeMaker::VERSION ge '6.46')
 	{
 		'meta-spec' =>
 		{
-			version => 2,
+		'version' => 2,
 		},
 		resources   =>
 		{
-			bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
-			license    => 'http://opensource.org/licenses/Artistic-2.0',
+		'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
+		'license' => 'http://opensource.org/licenses/Artistic-2.0',
 			repository =>
 			{
-				type => 'git',
-				url  => 'https://github.com/ronsavage/HTML-Entities-Interpolate.git',
-				web  => 'https://github.com/ronsavage/HTML-Entities-Interpolate',
+		'type' => 'git',
+		'url' => 'https://github.com/ronsavage/HTML-Entities-Interpolate.git',
+		'web' => 'https://github.com/ronsavage/HTML-Entities-Interpolate',
 			},
 		},
 	};

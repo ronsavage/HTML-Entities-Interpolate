@@ -3,6 +3,8 @@ use warnings;
 
 use Module::Build;
 
+# ----------------
+
 my $class = Module::Build->subclass(code => <<'EOF');
 
 sub ACTION_authortest
@@ -30,22 +32,22 @@ $class -> new
 	dist_author	=> 'Ron Savage <ron@savage.net.au>',
 	build_requires	=>
 	{
-		'Test::More' => 1.001006,
-#		'Test::Pod'  => 1.45, # Make it optional. See t/pod.t
+		'Test::More' => 1.001014,
+		'Test::Pod' => 1.48,
 	},
 	configure_requires =>
 	{
-		'Module::Build' => 0.4210,
+		'Module::Build' => 0.4211,
 	},
 	requires	=>
 	{
 		'HTML::Entities' => 0,
-		'Tie::Function'  => 0,
+		'Tie::Function' => 0,
 	},
 	resources =>
 	{
-		bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
-		license    => 'http://opensource.org/licenses/Artistic-2.0',
-		repository => 'https://github.com/ronsavage/HTML-Entities-Interpolate',
+		'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
+		'license' => 'http://opensource.org/licenses/Artistic-2.0',
+		'repository' => 'https://github.com/ronsavage/HTML-Entities-Interpolate',
 	},
 ) -> create_build_script();
