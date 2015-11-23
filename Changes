@@ -1,6 +1,6 @@
 Revision history for Perl extension HTML::Entities::Interpolate.
 
-1.07  Tue Nov 24 08:47:00 2015
+1.07  2015-11-24T08:47:00
 	- Add scripts/synopsis.pl and its output t/synopsis.html.
 	- Copy scripts/synopsis.pl into docs.
 	- Add t/test.t to run scripts/synopsis.pl and compare the output to t/synopsis.html.
@@ -8,14 +8,15 @@ Revision history for Perl extension HTML::Entities::Interpolate.
 	- Add .gitignore to MANIFEST.SKIP.
 	- Remove Build.PL.
 	- Remove t/load.t.
+	- Reformat the dates in this file.
 
-1.06  Wed Feb 18 16:32:00 2015
+1.06  2015-02-18T16:32:00
 	- Add use strict and use warnings to Build.PL and Makefile.PL.
 	- Add github repo to Build.PL, Makefile.PL and docs.
 	- Move t/pod.t to xt/author/.
 	- Patch Build.PL to handle xt/author/*.t.
 
-1.05  Tue Jul  9 08:56:00 2013
+1.05  2013-07-09T08:56:00
 	- No code changes.
 	- Rename CHANGES to Changes as per CPAN::Changes::SPEC.
 	- Recreate META.* files so they say licence is artistic_2 rather than artistic_1.
@@ -23,24 +24,24 @@ Revision history for Perl extension HTML::Entities::Interpolate.
 		There is no reference to licences in the source of the module itself.
 		This was requested by Christopher Meng who packages stuff for Fedora.
 
-1.04  Tue Feb 15 17:02:00 2011
+1.04  2011-02-15T17:02:00
 	- Replace /usr/bin/perl with /usr/bin/env perl.
 	- Replace common::sense with use strict and use warnings, to get uninit var warnings.
 	- Update MANIFEST.SKIP, MYMETA.json.
 	- Add META.json.
 
-1.03  Sun Feb 21 12:55:15 2010
+1.03  2010-02-21T12:55:15
 	- Remove text 'All rights reserved' (for Debian licensing).
 	- Remove POD heads 'Required Modules' and 'Changes'.
 
-1.02  Wed Feb 10 14:02:07 2010
+1.02  2010-02-10T14:02:07
 	- MANIFEST.SKIP updated to exclude MYMETA.yml. Add MYMETA.yml.
 
-1.01  Fri Nov 13 13:20:00 2009
+1.01  2009-11-13T13:20:00
 	- Run dos2unix
 	- Rename Changes.txt to CHANGES
 
-1.00  Wed Nov  9 15:30:45 2004
+1.00  2004-11-09T15:30:45
 	- Original version
 	- Source code author: David Nicol
 	- I (Ron Savage) am releasing this module, which David emailed to me,
