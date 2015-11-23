@@ -1,4 +1,3 @@
-.gitignore
 Changelog.ini
 Changes
 lib/HTML/Entities/Interpolate.pm
