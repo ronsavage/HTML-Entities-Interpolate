@@ -30,6 +30,8 @@ my(%params) =
 	PL_FILES  => {},
 	PREREQ_PM =>
 	{
+		'Capture::Tiny' => 0.30,
+		'File::Slurper' => 0.008,
 		'HTML::Entities' => 0,
 		'Test::More' => 1.001014,
 		'Test::Pod' => 1.48,

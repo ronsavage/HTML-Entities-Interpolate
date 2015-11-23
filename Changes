@@ -1,12 +1,19 @@
 Revision history for Perl extension HTML::Entities::Interpolate.
 
+1.07  Tue Nov 24 08:47:00 2015
+	- Add scripts/synopsis.pl and its output t/synopsis.html.
+	- Copy scripts/synopsis.pl into docs.
+	- Add t/test.t to run scripts/synopsis.pl and compare the output to t/synopsis.html.
+	- Update pre-reqs to add Capture::Tiny and File::Slurper, which are used in t/test.t.
+	- Add .gitignore to MANIFEST.SKIP.
+	- Remove Build.PL.
+	- Remove t/load.t.
+
 1.06  Wed Feb 18 16:32:00 2015
 	- Add use strict and use warnings to Build.PL and Makefile.PL.
-	- Add github repo to Makefile.PL and docs.
+	- Add github repo to Build.PL, Makefile.PL and docs.
 	- Move t/pod.t to xt/author/.
 	- Patch Build.PL to handle xt/author/*.t.
-	- Remove Build.PL.
-	- Add .gitignore to MANIFEST.SKIP.
 
 1.05  Tue Jul  9 08:56:00 2013
 	- No code changes.

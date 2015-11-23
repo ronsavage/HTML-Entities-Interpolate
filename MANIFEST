@@ -7,5 +7,5 @@ MANIFEST			This list of files
 META.json
 META.yml
 README
-t/load.t
+t/test.t
 xt/author/pod.t
