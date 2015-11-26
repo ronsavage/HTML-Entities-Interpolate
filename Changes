@@ -1,5 +1,9 @@
 Revision history for Perl extension HTML::Entities::Interpolate.
 
+1.08  2015-11-26T14:26:00
+	- Patched t/test.t to use Test::Stream instead of Test::More, but did not patch Makefile.PL
+		to match.
+
 1.07  2015-11-24T08:47:00
 	- Apologies: Forgot to release V 1.06 to CPAN.
 	- Add scripts/synopsis.pl and its output t/synopsis.html.

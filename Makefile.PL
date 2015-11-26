@@ -33,7 +33,7 @@ my(%params) =
 		'Capture::Tiny' => 0.30,
 		'File::Slurper' => 0.008,
 		'HTML::Entities' => 0,
-		'Test::More' => 1.001014,
+		'Test::Stream' => 1.302026,
 		'Test::Pod' => 1.48,
 		'Tie::Function' => 0,
 	},
