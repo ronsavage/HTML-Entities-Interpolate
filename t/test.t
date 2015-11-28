@@ -4,14 +4,16 @@ use warnings;
 use Capture::Tiny 'capture';
 
 use File::Slurper 'read_text';
+use File::Spec;
 
 use Test::Stream -V1;
 
 # ------------------------
 
-my($stdout, $stderr, @result) = capture {`perl scripts/synopsis.pl`};
+my($script)                   = File::Spec -> catfile('scripts', 'synopsis.pl');
+my($stdout, $stderr, @result) = capture {`$^X $script`};
 $result[0]                    = join('', @result);
-my($expected)                 = read_text('t/synopsis.html');
+my($expected)                 = read_text(File::Spec -> catfile('t', 'synopsis.html') );
 
 ok($result[0] eq $expected);
 

@@ -6,7 +6,7 @@ use warnings;
 use HTML::Entities;
 use Tie::Function;
 
-our $VERSION = '1.08';
+our $VERSION = '1.09';
 
 # -----------------------------------------------
 

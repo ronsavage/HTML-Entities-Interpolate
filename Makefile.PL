@@ -32,10 +32,14 @@ my(%params) =
 	{
 		'Capture::Tiny' => 0.30,
 		'File::Slurper' => 0.008,
-		'HTML::Entities' => 0,
+		'File::Spec' => 0,
+		'HTML::Entities' => 3.69,
+		'strict' => 0,
+		'Test::More' => 1.001014, # Only used for xt/author/pod.t.
 		'Test::Stream' => 1.302026,
 		'Test::Pod' => 1.48,
-		'Tie::Function' => 0,
+		'Tie::Function' => 0.02,
+		'warnings' => 0,
 	},
 	VERSION_FROM => 'lib/HTML/Entities/Interpolate.pm',
 );
@@ -49,19 +53,19 @@ if ($ExtUtils::MakeMaker::VERSION ge '6.46')
 {
 	$params{META_MERGE} =
 	{
-		'meta-spec' =>
+		meta-spec =>
 		{
-		'version' => 2,
+			version => 2,
 		},
-		resources   =>
+		resources =>
 		{
-		'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
-		'license' => 'http://opensource.org/licenses/Artistic-2.0',
+			bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
+			license    => 'http://opensource.org/licenses/Artistic-2.0',
 			repository =>
 			{
-		'type' => 'git',
-		'url' => 'https://github.com/ronsavage/HTML-Entities-Interpolate.git',
-		'web' => 'https://github.com/ronsavage/HTML-Entities-Interpolate',
+				type => 'git',
+				url  => 'https://github.com/ronsavage/HTML-Entities-Interpolate.git',
+				web  => 'https://github.com/ronsavage/HTML-Entities-Interpolate',
 			},
 		},
 	};
