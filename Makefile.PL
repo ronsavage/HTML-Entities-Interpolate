@@ -53,7 +53,7 @@ if ($ExtUtils::MakeMaker::VERSION ge '6.46')
 {
 	$params{META_MERGE} =
 	{
-		meta-spec =>
+		'meta-spec' =>
 		{
 			version => 2,
 		},
