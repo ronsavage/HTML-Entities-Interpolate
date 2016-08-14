@@ -6,7 +6,7 @@ use Capture::Tiny 'capture';
 use File::Slurper 'read_text';
 use File::Spec;
 
-use Test::Stream -V1;
+use Test::More;
 
 # ------------------------
 

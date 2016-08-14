@@ -6,7 +6,7 @@ use warnings;
 use HTML::Entities;
 use Tie::Function;
 
-our $VERSION = '1.09';
+our $VERSION = '1.10';
 
 # -----------------------------------------------
 
@@ -95,5 +95,8 @@ L<https://rt.cpan.org/Public/Dist/Display.html?Name=HTML::Entities::Interpolate>
 David Nicol <davidnicol@gmail.com>.
 
 Maintainer: Ron Savage I<E<lt>ron@savage.net.auE<gt>>.
+
+The full text of the license can be found in the
+LICENSE file included with this module.
 
 =cut
