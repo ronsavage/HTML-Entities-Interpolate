@@ -30,16 +30,18 @@ my(%params) =
 	PL_FILES  => {},
 	PREREQ_PM =>
 	{
-		'Capture::Tiny' => 0.30,
-		'File::Slurper' => 0.008,
-		'File::Spec' => 0,
-		'HTML::Entities' => 3.69,
-		'strict' => 0,
-		'Test::More' => 1.001014, # Only used for xt/author/pod.t.
-		'Test::Stream' => 1.302026,
-		'Test::Pod' => 1.48,
-		'Tie::Function' => 0.02,
-		'warnings' => 0,
+		'Capture::Tiny'		=> 0.44,
+		'HTML::Entities'	=> 3.69,
+		'strict'			=> 0,
+		'Tie::Function'		=> 0.02,
+		'warnings'			=> 0,
+	},
+	TEST_REQUIRES =>
+	{
+		'File::Slurper'		=> 0.009,
+		'File::Spec'		=> 0,
+		'Test::Pod'			=> 1.51,
+		'Test::Simple'		=> 1.302052, # For Test::More.
 	},
 	VERSION_FROM => 'lib/HTML/Entities/Interpolate.pm',
 );

@@ -8,7 +8,7 @@ Revision history for Perl extension HTML::Entities::Interpolate.
 		http://savage.net.au/Ron/html/My.Workflow.for.Building.Distros.html.
 	- Update .gitignore and MANIFEST.SKIP.
 	- Change licence from Artistic to Perl.
-	- Move File::Spec, File::Temp, Test::Pod and Test::Simple to TEST_REQUIRES within Makefile.PL.
+	- Move File::Spec, Test::Pod and Test::Simple to TEST_REQUIRES within Makefile.PL.
 
 1.09  2015-11-29T10:08:00
 	- Replace "\t" with \s{4} in scripts/synopsis.pl and t/synopsis.html in an attempt to fix
