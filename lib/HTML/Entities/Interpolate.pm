@@ -96,6 +96,9 @@ David Nicol <davidnicol@gmail.com>.
 
 Maintainer: Ron Savage I<E<lt>ron@savage.net.auE<gt>>.
 
+This program is free software; you can redistribute
+it and/or modify it under the same terms as Perl itself.
+
 The full text of the license can be found in the
 LICENSE file included with this module.
 

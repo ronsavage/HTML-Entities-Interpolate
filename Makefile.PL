@@ -61,7 +61,10 @@ if ($ExtUtils::MakeMaker::VERSION ge '6.46')
 		},
 		resources =>
 		{
-			bugtracker	=> 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
+			bugtracker =>
+			{
+				web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Entities-Interpolate',
+			},
 			license		=> 'http://dev.perl.org/licenses/',
 			repository	=>
 			{
